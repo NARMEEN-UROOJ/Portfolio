@@ -15,6 +15,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#" onclick="showPage('home')">Home</a></li>
         <li><a href="#" onclick="showPage('about')">About</a></li>
+        <li><a href="#" onclick="showPage('skills')">Skills</a></li>
         <li><a href="#" onclick="showPage('projects')">Projects</a></li>
         <li><a href="#" onclick="showPage('contact')">Contact</a></li>
       </ul>
@@ -22,6 +23,7 @@
   </header>
 
   <main>
+    <!-- Home Page -->
     <section id="home" class="page active">
       <div class="hero">
         <h1>AI Student | Developer | Explorer</h1>
@@ -30,6 +32,7 @@
       </div>
     </section>
 
+    <!-- About Page -->
     <section id="about" class="page">
       <h2 class="section-title">About Me</h2>
       <div class="cards">
@@ -48,6 +51,30 @@
       </div>
     </section>
 
+    <!-- Skills Page -->
+    <section id="skills" class="page">
+      <h2 class="section-title">Skills</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>💻 Programming Languages</h3>
+          <p>Python, Java, SQL, HTML/CSS</p>
+        </div>
+        <div class="card">
+          <h3>🧪 ML & Data Science</h3>
+          <p>Scikit-learn, Pandas, NumPy, TensorFlow, Keras, Matplotlib</p>
+        </div>
+        <div class="card">
+          <h3>🛠️ Tools</h3>
+          <p>Google Colab, Jupyter, GitHub, VS Code</p>
+        </div>
+        <div class="card">
+          <h3>🎯 Core Skills</h3>
+          <p>Problem Solving, Adaptability, Data Preprocessing, Model Evaluation, OOP</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Page -->
     <section id="projects" class="page">
       <h2 class="section-title">Projects</h2>
       <div class="cards">
@@ -70,12 +97,16 @@
       </div>
     </section>
 
+    <!-- Contact Page -->
     <section id="contact" class="page">
       <h2 class="section-title">Contact Me</h2>
+      <div class="text-center mb-2">
+        <p>Let’s collaborate or connect for exciting ML/Data Science opportunities!</p>
+      </div>
       <form class="contact-form" id="contactForm">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
         <button type="submit" class="submit-btn">Send Message</button>
       </form>
 
@@ -87,97 +118,11 @@
         <div class="card text-center">
           <h3>🌐 LinkedIn</h3>
           <p><a href="https://www.linkedin.com/in/narmeen-urooj-240a45364/" target="_blank">linkedin.com/in/narmeen-urooj</a></p>
-      </div>
-    </section>
-    <script src="script.js" defer></script>
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">Narmeen Urooj</div>
-      <ul class="nav-links" id="navLinks">
-        <li><a onclick="showPage('home')">Home</a></li>
-        <li><a onclick="showPage('about')">About</a></li>
-        <li><a onclick="showPage('skills')">Skills</a></li>
-        <li><a onclick="showPage('contact')">Contact</a></li>
-      </ul>
-      <button class="mobile-menu" id="mobileMenu">☰</button>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Home Page -->
-    <section id="home" class="page active">
-      <div class="hero">
-        <h1>AI Student & Learner</h1>
-        <p>Exploring the world of Machine Learning and Data Science.</p>
-        <a href="#" class="cta-button" onclick="showPage('contact')">Get in Touch</a>
-      </div>
-    </section>
-
-    <!-- About Page -->
-    <section id="about" class="page">
-      <h2 class="section-title">About Me</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Who I Am</h3>
-          <p>I'm a BS Artificial Intelligence student, deeply passionate about solving real-world problems with ML and data. I'm self-motivated, adaptable, and always give my best to whatever I start.</p>
-        </div>
-        <div class="card">
-          <h3>My Journey</h3>
-          <p>From curiosity to capability—I've explored multiple domains like data preprocessing, model evaluation, and building projects using tools like Python, TensorFlow, and Scikit-learn.</p>
         </div>
       </div>
-    </section>
-
-    <!-- Skills Page -->
-    <section id="skills" class="page">
-      <h2 class="section-title">Skills</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>💻 Programming Languages</h3>
-          <p>Python, Java, SQL, HTML/CSS</p>
-        </div>
-        <div class="card">
-          <h3>🧪 Machine Learning & Data Science</h3>
-          <p>Scikit-learn, Pandas, NumPy, Matplotlib, TensorFlow, Keras</p>
-        </div>
-        <div class="card">
-          <h3>🛠️ Tools & Platforms</h3>
-          <p>Google Colab, Jupyter Notebook, VS Code, GitHub</p>
-        </div>
-        <div class="card">
-          <h3>🎯 Core Skills</h3>
-          <p>Data Preprocessing, Model Evaluation, OOP, Problem Solving, Adaptability</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Page -->
-    <section id="contact" class="page">
-      <h2 class="section-title">Contact</h2>
-      <div class="text-center mb-2">
-        <p>Let’s collaborate or connect for exciting ML/Data Science opportunities!</p>
-      </div>
-      <form class="contact-form" id="contactForm">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
-      <div class="cards">
-        <div class="card text-center">
-          <h3>📧 Email</h3>
-          <p>narmeenurooj36@gmail.com</p>
-        </div>
-       
     </section>
   </main>
-</body>
-</html>
 
-  </main>
-
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
